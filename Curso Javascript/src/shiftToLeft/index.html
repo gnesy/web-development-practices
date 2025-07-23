@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shift To Left</title>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body
+    class="h-screen flex flex-col gap-6 md:gap-4 lg:gap-4 items-center justify-center bg-[#322c2c]"
+  >
+    <div class="flex flex-col items-start px-5 gap-2 max-w-4xl">
+      <h1 class="text-3xl font-bold text-[#fffff5]">Shift To Left</h1>
+      <p class="text-[#fffff5] ">
+        The left shift operation is similar to multiplication by powers of two.
+        Write a function that mimics (without the use of <<) the left shift
+        operator and returns the result from the two given integers.
+      </p>
+      <p class="text-[#fffff5]">Example: 10 << 2 = 40 (10 * 2^2)</p>
+    </div>
+    <main
+      class="flex flex-wrap justify-center md:flex-nowrap lg:flex-nowrap gap-3 p-3 bg-[#fffff5] rounded-lg h-min w-min"
+    >
+      <input
+        type="text"
+        id="x"
+        placeholder="Ej: 10"
+        class="bg-[#e4809a] p-2 rounded-lg w-[6rem] outline-none text-[#fffff5]"
+      />
+      <p class="flex justify-center items-center font-bold text-[#322c2c]">
+        <<
+      </p>
+      <input
+        type="text"
+        id="y"
+        placeholder="Ej: 2"
+        class="bg-[#e4809a] p-2 rounded-lg w-[6rem] outline-none text-[#fffff5]"
+      />
+      <button
+        id="calculateButton"
+        class="bg-[#9aab64] rounded-lg p-2 text-[#322c2c] hover:bg-[#7f8b4f] hover:text-white"
+      >
+        Calculate
+      </button>
+      <p id="result" class="p-2 text-center text-[#322c2c] wrap-anywhere md:w-max lg:w-max"></p>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

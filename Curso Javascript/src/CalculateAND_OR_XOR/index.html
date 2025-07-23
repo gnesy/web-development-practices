@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operations</title>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body
+    class="h-screen flex flex-col items-center lg:justify-center md:justify-center bg-[#364c84] gap-6 px-10 py-6 md:gap-4 lg:gap-6 md:p-6 lg:p-4">
+    <h1 class="font-bold text-3xl text-[#fffdf5]">Operations</h1>
+    <!-- contenedor de las operaciones -->
+    <main class="flex flex-wrap gap-7 justify-center items-center">
+        <!-- contenedor de operación AND -->
+      <section
+        class="flex flex-col justify-center items-center border rounded-lg gap-2 p-4 w-55 md:w-60 lg:w-70 h-auto text-[#364c84] bg-[#fffdf5]">
+        <h2 class="text-2xl font-bold">AND</h2>
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="ANDnum1"
+          type="text"
+          placeholder="First number"
+        />
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="ANDnum2"
+          type="text"
+          placeholder="Second number"
+        />
+        <button
+          id="ANDcalculate"
+          class="bg-[#e7f1a8] text-[#364c84] m-2 p-2 rounded-md hover:cursor-pointer"
+        >
+          Calculate
+        </button>
+        <p
+          id="ANDresult"
+          class="w-full break-all text-center font-semibold"
+        ></p>
+      </section>
+      <!-- contenedor de operación OR -->
+      <section
+        class="flex flex-col justify-center items-center border rounded-lg gap-2 p-4 w-55 md:w-60 lg:w-70 h-auto text-[#364c84] bg-[#fffdf5]"
+      >
+        <h2 class="text-2xl font-bold">OR</h2>
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="ORnum1"
+          type="text"
+          placeholder="First number"
+        />
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="ORnum2"
+          type="text"
+          placeholder="Second number"
+        />
+        <button
+          id="ORcalculate"
+          class="bg-[#e7f1a8] text-[#364c84] m-2 p-2 rounded-md hover:cursor-pointer"
+        >
+          Calculate
+        </button>
+        <p id="ORresult" class="w-full break-all text-center font-semibold"></p>
+      </section>
+      <!-- contenedor de operación de XOR -->
+      <section
+        class="flex flex-col justify-center items-center border rounded-lg gap-2 p-4 w-55 md:w-60 lg:w-70 h-auto text-[#364c84] bg-[#fffdf5]"
+      >
+        <h2 class="text-2xl font-bold">XOR</h2>
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="XORnum1"
+          type="text"
+          placeholder="First number"
+        />
+        <input
+          class="border rounded-sm outline-none min-w-[100px] max-w-[150px] p-1"
+          id="XORnum2"
+          type="text"
+          placeholder="Second number"
+        />
+        <button
+          id="XORcalculate"
+          class="bg-[#e7f1a8] text-[#364c84] m-2 p-2 rounded-md hover:cursor-pointer"
+        >
+          Calculate
+        </button>
+        <p
+          id="XORresult"
+          class="w-full break-all text-center font-semibold"
+        ></p>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
