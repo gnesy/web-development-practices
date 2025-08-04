@@ -1,20 +1,20 @@
-const inputbase = document.getElementById("x");
-const inputexponente = document.getElementById("y");
+const inputBase = document.getElementById("x");
+const inputExponent = document.getElementById("y");
 const calculate = document.getElementById("calculateButton");
 const output = document.getElementById("result");
 
 calculate.addEventListener("click", () =>
-  shiftToLeft(inputbase, inputexponente)
+  shiftToLeft(inputBase, inputExponent)
 );
 
-function shiftToLeft(inputbase, inputexponente) {
-  let base = inputbase.value;
-  let exponente = inputexponente.value;
+function shiftToLeft(inputBase, inputExponent) {
+  let base = inputBase.value;
+  let exponent = inputExponent.value;
   let result = output.value;
 
-  if (base != "" && exponente != "") {
-    if (parseInt(base) && parseInt(exponente) && exponente>0) {
-      let aux = Math.pow(2, exponente);
+  if (base != "" && exponent != "") {
+    if (parseInt(base) && parseInt(exponent) && exponent>0) {
+      let aux = Math.pow(2, exponent);
       result = base * aux;
       output.style.fontWeight = "bold";
       output.style.color = "#322c2c";
