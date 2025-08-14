@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+:root {
+  --color-bento-purple: #7552f2;
+  --color-bento-ivory: #faeee2;
+  --color-bento-lilac: #d6cef2;
+  --color-bento-mirabelle-yellow: #f2c166;
+  --color-bento-opaque-white: #f2f2f2;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color-bento-opaque-white);
+  margin: 0px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+main {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.quicker {
+  color: var(--color-bento-purple);
+  font-style: italic;
+}
+.buttonOne {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: var(--color-bento-mirabelle-yellow);
+  width: fit-content;
+  height: fit-content;
+  border-radius: calc(infinity * 1px);
+  padding: 15px 20px;
+  p {
+    margin: 0px;
+    color: var(--color-bento-purple);
+    font-weight: bold;
+  }
+}
+.cell1 {
+  background-color: var(--color-bento-ivory);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  padding: 20px;
+  gap: 10px;
+  h1 {
+    width: min(200px);
+    margin: 0px;
+  }
+}
+.cell2 {
+  background-color: var(--color-bento-purple);
+  color: var(--color-bento-opaque-white) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  p{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0px;
+  }
+  h1{
+
+    font-size: 2.5rem; 
+    margin: 0px;
+    width: min(300px);
+  }
+  span{
+    color: var(--color-bento-mirabelle-yellow);
+  }
+  
+}
+.cell3 {
+  background-color: var(--color-bento-lilac);
+  border-radius: 10px;
+  grid-column-start: 4;
+  grid-row-end: span 3;
+  overflow: hidden;
+  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1{
+    margin: 0;
+    width: 200px;
+  }
+  img{
+    object-fit: contain;
+    align-self: flex-start;
+    width: fit-content;
+  }
+  p{
+    width: 200px;
+    margin: 0px;
+    
+  }
+}
+.cell4 {
+  background-color: var(--color-bento-mirabelle-yellow);
+  border-radius: 10px;
+  grid-row: span 2 / span 2;
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+  h1{
+    margin: 0px;
+    width: 200px;
+  }
+  img{
+    object-fit: contain;
+    margin: 0px;
+  }
+}
+.cell5 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+  justify-items: flex-end;
+  position: relative;
+  img{
+    position: absolute;
+    object-fit: contain;
+  }
+  p{
+    margin: 0px;
+    width: 160px;
+    font-size: 1.2rem;
+    position: relative;
+    top: 65px;
+
+  }
+}
+.cell6 {
+  background-color: var(--color-bento-mirabelle-yellow);
+  border-radius: 10px;
+  grid-column-start: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  img{
+    object-fit: contain;
+    position: absolute;
+    bottom: -30px;
+    left: 80px;
+
+  }
+  p{
+    margin: 0px;
+    width: 160px;
+    font-size: 1.2rem;
+  }
+}
+.cell7 {
+  background-color: white;
+  border-radius: 10px;
+  grid-row-start: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  h1{
+    margin: 0px;
+    width: min-content;
+  }
+  p{
+    margin: 0px;
+    width: 180px;
+  }
+  img{
+    margin: 0px;
+    object-fit: contain;
+    width: 150px;
+  }
+}
+.cell8 {
+  background-color: var(--color-bento-purple);
+  border-radius: 10px;
+  grid-column: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+/* From Uiverse.io by amikambs */
+.rating:not(:checked) > input {
+  appearance: none;
+}
+.rating{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  fill: #666;
+}
+
+.rating:not(:checked) > label > svg {
+  fill: #666; /* Set default color for SVG */
+  transition: fill 0.3s ease; /* Add a transition effect */
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  fill: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  fill: #ff9e0b;
+}
+
+.rating > input:checked ~ label > svg {
+  fill: #ffa723; /* Set color for selected stars */
+}
